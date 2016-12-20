@@ -1,0 +1,14 @@
+Urobim si routes aby: 
+- fungovali pekne url adresy
+- fungovali linky na register, login, homepage atd...
+- ostatne linky presmeruje na page/slug
+
+
+Kuknut video c. 99 
+php-try-catch-exceptions-logovanie-errorov-do-suboru
+
+1) Zobrazenie podstranky z databazy
+2) Generovanie menu z podstranok webky (udaje tahat z databazy)
+3) Editovanie podstranok (ak som prihlaseny)
+4) Pridavanie a mazanie podstranok
+
