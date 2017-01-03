@@ -51,6 +51,7 @@ $routes = [
 ];
 
 $page = segment(1);
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 
@@ -59,4 +60,5 @@ if (!isset($routes["/$page"][$method])) {
     show_404();
 }
 
+echo $routes["/$page"][$method];
 require $routes["/$page"][$method];

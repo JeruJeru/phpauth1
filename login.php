@@ -1,6 +1,6 @@
 <?php
 include_once "_partials/header.php";
-use \Tamtamchik\SimpleFlash\Flash;
+// use \Tamtamchik\SimpleFlash\Flash;
 
 // login form submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,9 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         flash()->error($login['message']);
     } else {
         do_login($login);
-
         flash()->success('Sup, bro!');
-        header('Location:' . $base_url . '/index.php');
+        redirect('/');
     }
 }
 

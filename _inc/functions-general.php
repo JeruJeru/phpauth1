@@ -51,7 +51,7 @@
 		$path = str_replace( BASE_URL, '', $current_url );
 		$path = trim( parse_url( $path, PHP_URL_PATH ), '/' );
 
-		$segments = explode( '/', $path );
+                    $segments = explode( '/', $path );
 		return $segments;
 	}
 

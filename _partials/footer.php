@@ -4,7 +4,7 @@
 
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
+                <p class="text-muted">copyright 2017 pedro mavak | admin</p>
             </div>
         </footer>
 
