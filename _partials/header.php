@@ -1,7 +1,3 @@
-<?php
-use \Tamtamchik\SimpleFlash\Flash;
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,6 +21,9 @@ use \Tamtamchik\SimpleFlash\Flash;
         <!-- Custom styles for this template -->
         <link href="assets/css/navbar-static-top.css" rel="stylesheet">
         <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+        
+        <!-- Custom javascript -->
+        <script src="assets/js/my-alert-bootstrap.js"></script>
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -51,28 +50,27 @@ use \Tamtamchik\SimpleFlash\Flash;
                         <li><a href="about.php">About</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="register">Register</a></li>
-                            <li><a href="login">Login</a></li>
-                        </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="register">Register</a></li>
+                        <li><a href="login">Login</a></li>
+                    </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
 
         <header class="container">
+            <div id="alert_placeholder"></div>
+            
             <?php
             if (!$auth->isLogged()) {
                 header('HTTP/1.0 403 Forbidden');
-                echo "Si neprihlásený";
-
+                myalert('Si neprihlásený, choj sa prihlásiť', 'alert-info');
                 // exit();
             } else {
-                echo "Logged in";
-                flash()->success('Vitaj, si prihlásený');
+                myalert('Vitaj, si prihlásený :-)', 'alert-success');
             }
-
-            flash()->display()
             ?>
+
         </header>
 
         <div class="main-container">

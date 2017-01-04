@@ -12,9 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($register['error']) {
         flash()->error($register['message']);
+        echo ($register['message']);
     } else {
         flash()->success('Welcome! Now enter the same shit into a new form!');
-        header('Location:' . $base_url . '/login.php');
+        redirect('/login');
     }
 }
 ?>
@@ -24,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         Register, you dumbass
     </h2>
 
-    <input type="email" value="<?= $_POST['email'] ? : '' ?>" class="form-control" name="email" placeholder="Email Address" required autofocus>
+    <input type="email" value="" class="form-control" name="email" placeholder="Email Address" required autofocus>
     <input type="password" class="form-control" name="password" placeholder="Password" required>
     <input type="password" class="form-control" name="repeat" placeholder="Password again, DO IT" required>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>

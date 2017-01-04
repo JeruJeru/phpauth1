@@ -1,6 +1,6 @@
 <?php
-include_once "_partials/header.php";
-// use \Tamtamchik\SimpleFlash\Flash;
+//include_once "_partials/header.php";
+use \Tamtamchik\SimpleFlash\Flash;
 
 // login form submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -27,7 +27,7 @@ include_once "_partials/header.php";
         Login, bitch
     </h2>
 
-    <input type="text" value="<?= $_POST['username'] ? : '' ?>" class="form-control" name="username" placeholder="Email Address" required autofocus>
+    <input type="text" value="" class="form-control" name="username" placeholder="Email Address" required autofocus>
     <input type="password" class="form-control" name="password" placeholder="Password" required>
     <label class="checkbox">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" checked>

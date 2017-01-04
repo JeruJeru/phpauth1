@@ -49,6 +49,7 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 // global functions
 require_once 'functions-general.php';
 require_once 'functions-string.php';
+require_once 'functions-alert.php';
 require_once 'functions-auth.php';
 
 
@@ -57,4 +58,4 @@ include("vendor/PHPAuth/Config.php");
 include("vendor/PHPAuth/Auth.php");
 
 $auth_config = new PHPAuth\Config($db);
-$auth = new PHPAuth\Auth($db, $auth_config);
+$auth = new PHPAuth\Auth($db, $auth_config, "cs_CZ");
