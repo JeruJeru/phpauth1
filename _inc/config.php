@@ -50,6 +50,7 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 require_once 'functions-general.php';
 require_once 'functions-string.php';
 require_once 'functions-alert.php';
+require_once 'functions-pages.php';
 require_once 'functions-auth.php';
 
 

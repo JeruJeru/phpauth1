@@ -11,10 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $register = $auth->register($email, $password, $password_repeat);
 
     if ($register['error']) {
-        flash()->error($register['message']);
-        echo ($register['message']);
+        myalert($register['message'], 'alert-warning');
     } else {
-        flash()->success('Welcome! Now enter the same shit into a new form!');
+        myalert('Vitaj! Teraz zadaj do formulára rovnaké údaje pre prihlásenie!', 'alert-info');
         redirect('/login');
     }
 }

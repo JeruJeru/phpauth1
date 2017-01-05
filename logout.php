@@ -11,5 +11,5 @@ if (!logged_in()) {
 do_logout();
 
 // flash it & go home
-flash()->success('Bye bye!');
-header('Location:' . $base_url . '/index.php');
+myalert('Majte sa pekne :-)', 'alert-info');
+redirect('/');

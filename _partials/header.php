@@ -53,6 +53,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="register">Register</a></li>
                         <li><a href="login">Login</a></li>
+                        <?php if ($auth->isLogged()) echo '<li><a href="logout">LogOut</a></li>' ; ?>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
