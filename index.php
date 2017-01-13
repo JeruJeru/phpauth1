@@ -9,6 +9,11 @@ $routes = [
         'GET' => 'home.php'
     ],
     
+    // HOMEPAGE - index.php on ale v blogu nema (pozriet ako mu to funguje)
+    '/index.php' => [
+        'GET' => 'home.php'
+    ],
+    
     // USER
     '/user' => [
     	'GET'  => 'user.php'                // user profile
@@ -32,8 +37,8 @@ $routes = [
     ],
     
     // POST
-    '/post' => [
-        'GET' => 'post.php',                // show post
+    '/page' => [
+        'GET' => 'page.php',                // show post
         'POST' => '_admin/post-add.php',    // add new post
     ],
     

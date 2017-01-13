@@ -3,13 +3,13 @@ Urobim si routes aby:
 - fungovali linky na register, login, homepage atd... [OK - hotovo]
 - ostatne linky presmeruje na page/slug
 
-Botstrap slerty [OK - hotovo]
+Botstrap alerty [ jQuery nefunguje pri redirecte ]
 
 Kuknut video c. 99 
 php-try-catch-exceptions-logovanie-errorov-do-suboru
 
-1) Zobrazenie podstranky z databazy [OK - ciastocne hotovo]
+1) Zobrazenie podstranky z databazy [OK - hotovo]
 2) Generovanie menu z podstranok webky (udaje tahat z databazy)
-3) Editovanie podstranok (ak som prihlaseny)
+3) Editovanie podstranok (ak som prihlaseny) [OK - hotovo]
 4) Pridavanie a mazanie podstranok
 

@@ -1,3 +1,4 @@
+<?php include_once "_inc/config.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,28 +13,18 @@
         <title></title>
 
         <!-- Bootstrap core CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/styl.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?= asset('/css/bootstrap.min.css') ?>">
+	<link rel="stylesheet" href="<?= asset('/css/styl.css') ?>">
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!--<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
 
-        <!-- Custom styles for this template -->
-        <link href="assets/css/navbar-static-top.css" rel="stylesheet">
-        <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
-        
         <!-- Custom javascript -->
-        <script src="assets/js/my-alert-bootstrap.js"></script>
+        <script src="<?= asset('/js/my-alert-bootstrap.js') ?>"></script>
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
     </head>
 
     <body class="<?= segment(1) ? plain(segment(1)) : 'home' ?>">
@@ -65,7 +56,7 @@
             <?php
             if (!$auth->isLogged()) {
                 header('HTTP/1.0 403 Forbidden');
-                myalert('Si neprihlásený, choj sa prihlásiť', 'alert-info');
+                // myalert('Si neprihlásený, choj sa prihlásiť', 'alert-info');
                 // exit();
             } else {
                 myalert('Vitaj, si prihlásený :-)', 'alert-success');
