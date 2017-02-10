@@ -6,10 +6,8 @@ ini_set('display_errors', 1);
 error_reporting(-1);    // "-1" chybove hlasky, "1" ziadne chybove hlasky
 //error_reporting(E_ALL & ~E_NOTICE);
 
-
-// require stuff
-if (!session_id())
-    @session_start();
+// pre tamtamchik/simple-flash
+if (!session_id()) @session_start();
 require_once 'vendor/autoload.php';
 
 
@@ -40,7 +38,7 @@ $db = new PDO(
 // ERRMODE_SILENT - vypise chybu a koniec
 // ERRMODE_SILENT - nevypise chybu
 // ERRMODE_WARNING - nevypise chybu a webka pokracuje dalej
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // PDO pripravy SQL skor ako ho vlozi do databazy, ale nove verzie MySQL si ten kod vedia pripravit samy
 // defalul je to nastavene na true, cize aby PDO propravoval
 // pri novych verziach MYSQL nastavujeme ATTR_EMULATE_PREPARES na false

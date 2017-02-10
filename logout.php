@@ -11,5 +11,5 @@ if (!logged_in()) {
 do_logout();
 
 // flash it & go home
-myalert('Majte sa pekne :-)', 'alert-info');
+flash()->info('Majte sa pekne :-)');
 redirect('/');

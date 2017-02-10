@@ -1,6 +1,7 @@
 <?php
-
 require_once '_inc/config.php';
+use \Tamtamchik\SimpleFlash\Flash;
+
 
 $routes = [
 

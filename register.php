@@ -1,6 +1,5 @@
 <?php
 include_once "_partials/header.php";
-use \Tamtamchik\SimpleFlash\Flash;
 
 // register form submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -11,9 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $register = $auth->register($email, $password, $password_repeat);
 
     if ($register['error']) {
-        myalert($register['message'], 'alert-warning');
+        flash()->info($register['message']);
     } else {
-        myalert('Vitaj! Teraz zadaj do formulára rovnaké údaje pre prihlásenie!', 'alert-info');
+        flash()->info('Vitaj! Teraz napiš do formulára svoje prihlasovacie údaje pre prihlásenie!');
         redirect('/login');
     }
 }

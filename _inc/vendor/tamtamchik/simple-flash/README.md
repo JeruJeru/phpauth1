@@ -8,7 +8,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![SensioLabs Insight][ico-insight]][link-insight]
 
-Easy, framework agnostic flash notifications. Inspired by [laracasts/flash](https://github.com/laracasts/flash) and [plasticbrain/PHP-Flash-Messages](https://github.com/plasticbrain/PHP-Flash-Messages). It supports multiple CSS frameworks out of the box:
+Easy, framework agnostic flash notifications for PHP. Inspired by [laracasts/flash](https://github.com/laracasts/flash) and [plasticbrain/PHP-Flash-Messages](https://github.com/plasticbrain/PHP-Flash-Messages). It supports multiple CSS frameworks out of the box:
 
 * [Bootstrap 3](http://getbootstrap.com) (default)
 * [Bootstrap 4](http://v4-alpha.getbootstrap.com)
@@ -17,8 +17,6 @@ Easy, framework agnostic flash notifications. Inspired by [laracasts/flash](http
 * [Semantic UI 2](http://semantic-ui.com)
 * [Siimple](http://siimple.github.io)
 * [UIKit 2](http://getuikit.com)
-
-Demo: [http://demo.tamtamchika.net/simple-flash/examples/](http://demo.tamtamchika.net/simple-flash/examples/)
 
 ![simple-flash](https://dl.dropboxusercontent.com/u/1285445/pub/simple-flash.png)
 

@@ -109,16 +109,16 @@
         },
         {
             "name": "tamtamchik/simple-flash",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tamtamchik/simple-flash.git",
-                "reference": "f115c19525b464866d176b2929934d783525f269"
+                "reference": "ba286432d8bb34ef95ecc9a2b36d65dbd207fe7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tamtamchik/simple-flash/zipball/f115c19525b464866d176b2929934d783525f269",
-                "reference": "f115c19525b464866d176b2929934d783525f269",
+                "url": "https://api.github.com/repos/tamtamchik/simple-flash/zipball/ba286432d8bb34ef95ecc9a2b36d65dbd207fe7a",
+                "reference": "ba286432d8bb34ef95ecc9a2b36d65dbd207fe7a",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                     "homepage": "http://tamtamchika.net"
                 }
             ],
-            "description": "Easy, framework agnostic flash notifications.",
+            "description": "Easy, framework agnostic flash notifications for PHP.",
             "homepage": "http://github.com/tamtamchik/simple-flash",
             "keywords": [
                 "agnostic",
@@ -164,7 +164,7 @@
                 "messages",
                 "notifications"
             ],
-            "time": "2016-05-10 13:32:39"
+            "time": "2016-12-21 16:25:18"
         }
     ],
     "packages-dev": [],

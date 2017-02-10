@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         flash()->error($login['message']);
     } else {
         do_login($login);
-        flash()->success('Sup, bro!');
+        flash()->success('Vitaj, si prihlásený :-)');
         redirect('/');
     }
 }

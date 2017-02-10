@@ -8,7 +8,7 @@ try {
 include "_partials/header.php";
 
 if (!$page) {
-    //myalert('stránka neexistuje :-(', 'alert-info'); //tutoka to nefunguje kvoli redirectu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    flash()->info('stránka neexistuje :-(');
     redirect('/');
 }
 ?>

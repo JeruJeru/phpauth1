@@ -56,12 +56,13 @@
             <?php
             if (!$auth->isLogged()) {
                 header('HTTP/1.0 403 Forbidden');
-                // myalert('Si neprihlásený, choj sa prihlásiť', 'alert-info');
+                //flash()->info('Si neprihlásený, choj sa prihlásiť');
                 // exit();
             } else {
-                myalert('Vitaj, si prihlásený :-)', 'alert-success');
+                //flash()->info('Vitaj, si prihlásený :-)');
             }
             ?>
+            <?= flash()->display() ?>
 
         </header>
 
