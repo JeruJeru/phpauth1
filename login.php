@@ -1,6 +1,4 @@
 <?php
-//include_once "_partials/header.php";
-use \Tamtamchik\SimpleFlash\Flash;
 
 // login form submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
